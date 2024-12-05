@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "WebappApplication",
+            "request": "launch",
+            "mainClass": "com.test.webapp.WebappApplication",
+            "projectName": "webapp"
+        },
+        {
+            "type": "java",
+            "name": "NewappApplication",
+            "request": "launch",
+            "mainClass": "com.springboot.newapp.NewappApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "DemoApplication",
+            "request": "launch",
+            "mainClass": "com.newapp.demo.DemoApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoappApplication<demoapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.test.demoapp.DemoappApplication",
+            "projectName": "demoapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
