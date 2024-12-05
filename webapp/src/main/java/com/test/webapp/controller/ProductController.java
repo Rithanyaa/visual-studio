@@ -19,6 +19,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.test.webapp.model.Product;
 import com.test.webapp.service.ProductService;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @CrossOrigin
@@ -104,6 +106,12 @@ public class ProductController {
         }
     }
 
-    
+     @GetMapping("/products/search")
+     public ResponseEntity<List<Product>> searchProducts(@RequestParam String keyword) {
+        System.out.println("searching with" +keyword);
+         List<Product> products = service.searchProducts(keyword);
+         return new ResponseEntity<>(products, HttpStatus.OK);
+     }
+     
 
 }
