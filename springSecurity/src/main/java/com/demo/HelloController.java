@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 @RestController
 public class HelloController {
 
-    @GetMapping("/greet")
+    @GetMapping("/index.html")
     public String greet(HttpServletRequest request) {
         return "Welcome to Spring Framework! Session ID: " + request.getSession().getId();
     }
