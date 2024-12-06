@@ -10,13 +10,9 @@ import jakarta.servlet.http.HttpServletRequest;
 @RestController
 public class HelloController {
 
-    @GetMapping("/")
+    @GetMapping("/greet")
     public String greet(HttpServletRequest request) {
         return "Welcome to Spring Framework! Session ID: " + request.getSession().getId();
     }
 
-    @ExceptionHandler(NoHandlerFoundException.class)
-    public String handleNotFound() {
-        return "Oops! Resource not found.";
-    }
 }
