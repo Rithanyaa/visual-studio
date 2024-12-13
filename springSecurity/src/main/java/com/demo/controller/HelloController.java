@@ -10,7 +10,7 @@ public class HelloController {
 
     @GetMapping("/index.html")
     public String greet(HttpServletRequest request) {
-        return "Welcome to Spring Framework! Session ID: " + request.getSession().getId();
+        return "Welcome to Springframework! Session ID: " + request.getSession().getId();
     }
 
 }
